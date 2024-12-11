@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Element } from 'react-scroll'
 import { plans } from '../constants'
+import Button from '../components/Button'
 import CountUp from 'react-countup'
 import clsx from 'clsx'
 
@@ -99,6 +100,17 @@ const Pricing = () => {
                                             </li>
                                         ))}
                                     </ul>
+                                    <div className="mt-10 flex w-full justify-center">
+                                        <Button icon={plan.icon}>
+                                            Get started
+                                        </Button>
+                                    </div>
+
+                                    {index === 1 && (
+                                        <p className="small-compact mt-9 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
+                                            Limited time offer
+                                        </p>
+                                    )}
                                 </div>
                             ))}
                         </div>
