@@ -28,6 +28,23 @@ const Pricing = () => {
                             </button>
 
                             <div className={clsx("g4 rounded-14 before:h-100 pricing-head_btn_before absolute left-2 top-2 h-[calc(100%-16px)] w-[calc(50%-8px)] overflow-hidden shadow-400 transition-transform duration-500", !monthly && "translate-x-full") } />
+
+                            <div className="pricing-bg">
+                                <img 
+                                    src="/images/bg-outlines.svg"
+                                    width={960}
+                                    height={380} 
+                                    alt="outline"
+                                    className="relative z-2"
+                                />
+                                <img 
+                                    src="/images/bg-outlines-fill.svg"
+                                    width={960}
+                                    height={380} 
+                                    alt="outline"
+                                    className="absolute inset-0 opacity-5 mix-blend-soft-light"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
